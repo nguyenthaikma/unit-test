@@ -1,8 +1,4 @@
-import {
-  fireEvent,
-  render,
-  screen
-} from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import renderer from "react-test-renderer";
 import { Play } from ".";
 
@@ -68,5 +64,11 @@ describe("Comment", () => {
     const comments = await screen.findAllByTestId("comment");
 
     expect(comments).toHaveLength(2);
+  });
+});
+
+describe("Copy", () => {
+  it("isEqualObject", () => {
+    expect({ a: 1, b: 1 }).toEqual({ b: 1, a: 1 });
   });
 });

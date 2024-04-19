@@ -13,10 +13,17 @@ export function Play(props) {
 
   return (
     <div>
-      <button data-testid="minus" onClick={minus}>-</button>
+      <button data-testid="minus" onClick={minus}>
+        -
+      </button>
       <div data-testid="number">State: {state}</div>
-      <button data-testid="plus" onClick={plus}>+</button>
+      <button data-testid="plus" onClick={plus}>
+        +
+      </button>
     </div>
   );
 }
 
+export const copyObj = (obj) => {
+  return { ...obj };
+};
