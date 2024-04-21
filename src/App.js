@@ -1,20 +1,17 @@
 import "./App.css";
-import Comments from "./components/Comment";
-import { Play } from "./components/Play";
-
-import axios from "axios";
+import Form from "./components/Form";
 
 function App() {
-  console.log({...axios});
   return (
-    <body data-theme="light" className="App">
-      <Play />
+    <div data-theme="light" className="App">
+      {/* <Play />
       <br />
       <br />
       <br />
       <br />
-      <Comments />
-    </body>
+      <Comments /> */}
+      <Form />
+    </div>
   );
 }
 
