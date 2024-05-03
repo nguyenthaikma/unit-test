@@ -6,9 +6,13 @@ function App() {
   const configChart = {
     series: [
       {
-        name: "Desktops",
-        data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+        name: "High - 2013",
+        data: [28, 29, 33, 36, 32, 32, 33]
       },
+      {
+        name: "Low - 2013",
+        data: [12, 11, 14, 18, 17, 13, 13]
+      }
     ],
     options: {
       chart: {
@@ -38,6 +42,7 @@ function App() {
         text: "Product Trends by Month",
         align: "left",
       },
+      colors: ['#77B6EA', '#545454'],
       grid: {
         row: {
           colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
